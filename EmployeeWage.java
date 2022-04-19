@@ -1,16 +1,25 @@
+/** solving using class variable and method**/
 import java.util.Random;
 
 class EmployeeWage {
 
+	public static void main(String args[])
+	{
+		System.out.println("Welcome !");
+		ComputeWage.computeWage();
+	}
+}
+
+class ComputeWage
+{
+	
 	static int wagePerHr = 20; 
 	static int workingHr = 8;
 	static int dayPerMonth = 20;
 	static int HrPerMonth = 20;
 	static int totalWorkingHr  = 0 ;
 
-	/** calculating wage till working hour reached for a month **/
-
-	public static void main(String args[])
+	static void computeWage()
 	{
 		System.out.println("Welcome !");
 
