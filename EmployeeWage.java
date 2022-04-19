@@ -1,5 +1,3 @@
-// Solving using Switch Case Statement 
-
 import java.util.Random;
 
 class EmployeeWage {
@@ -7,6 +5,7 @@ class EmployeeWage {
 	static int wagePerHr = 20;
 	static int fullTimeHr = 8;
 	static int partTimeHr = 8;
+	static int dayPerMonth = 20;
 
 	public static void main(String args[]) {
 
@@ -16,18 +15,19 @@ class EmployeeWage {
 	int isEmployee = rand.nextInt(3);	
 	System.out.println(isEmployee);
 	
+	/**calculating wages for a month**/
 	switch (isEmployee) {
 	case 1 :
 	{
 		System.out.println("Employee is full time Present");
-		System.out.println("Daily full time Employee Wage = " +(wagePerHr * fullTimeHr));
+		System.out.println("Daily full time Employee Wage = " +(wagePerHr * fullTimeHr * dayPerMonth));
 		
 	}
 	break;
 	case 2 :
 	{
 		System.out.println("Employee is part time Present");
-		System.out.println("Daily part time Employee Wage = " +(wagePerHr * partTimeHr));
+		System.out.println("Daily part time Employee Wage = " +(wagePerHr * partTimeHr * dayPerMonth));
 	}	
 	break;
 	case 0 :
